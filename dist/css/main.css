@@ -195,17 +195,15 @@ header .header-flex-container .bars {
     padding: 0 1rem 0 1rem;
   }
   header .header-flex-container .button .free-trial {
-    padding: .5rem 2.5rem 1rem 2.5rem;
+    padding: 1rem 1rem 1rem 1rem;
   }
   header .header-flex-container .button a {
-    margin-right: 2rem;
+    margin-right: 1rem;
     padding: 0;
   }
   header .header-flex-container .bars {
     display: inline-block;
-    border: 2px solid #FFFFFF;
     padding: .5rem 1rem;
-    border-radius: 20%;
     -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
@@ -348,5 +346,59 @@ html {
 
 .home .home-container .content .btn i {
   padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    position: relative;
+  }
+  .home .home-container {
+    background-color: black;
+  }
+  .home .home-container .image {
+    width: 100vw;
+    height: 100vh;
+  }
+  .home .home-container .image img {
+    height: 100%;
+    width: 100%;
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .home .home-container .content {
+    text-transform: uppercase;
+    width: 67%;
+    padding: 1rem;
+    position: absolute;
+    top: 30rem;
+    right: 1rem;
+    bottom: 0;
+    display: inline-block;
+  }
+  .home .home-container .content h2 {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+  .home .home-container .content p {
+    font-size: 1.5rem;
+    color: #7A7A7A;
+    padding: 1rem 0 2rem 0;
+    line-height: 2rem;
+  }
+  .home .home-container .content .btn {
+    background-color: #2D2D2D;
+    font-size: 2rem;
+    color: #FFFFFF;
+    padding: 1.5rem 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .home .home-container .content .btn i {
+    padding: 1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
