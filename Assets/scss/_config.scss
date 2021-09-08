@@ -1,0 +1,56 @@
+$black:#000000;
+$white:#FFFFFF;
+$Ash:#2D2D2D;
+$testi:#F0F0F0;
+$text-color:#7A7A7A;
+$box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+@font-face {
+    font-family: ArchivoBlack ;
+    src: url('../fonts/ArchivoBlack-Regular.ttf');
+}
+@font-face {
+    font-family: BebasNeue;
+    src: url('../fonts/BebasNeue-Regular.ttf');
+}
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+$fontA: ArchivoBlack;
+$fontB: BebasNeue;
+$fontP:Poppins;
+
+*{
+    font-family: $fontP,'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top:5.5rem ;
+    scroll-behavior: smooth;
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 50%;
+    }
+}
+
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}
+
+
+

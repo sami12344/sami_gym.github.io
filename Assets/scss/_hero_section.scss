@@ -1,0 +1,58 @@
+@import './config';
+
+
+.home{
+    
+
+    position: relative;
+    .home-container{ 
+        .image{ 
+            width: 100vw;
+            height: 100vh;   
+            img{
+            height:100%;
+            width: 100%;
+            object-position: center;
+            object-fit: cover;
+            
+            }
+        
+        }
+        .content{
+            text-transform: uppercase;
+            width: 20%;
+            padding: 5rem;
+            position: absolute;
+            top: 25rem;
+            right: 17rem;
+            bottom: 0;
+            align-content: center;
+            align-self: center;
+            justify-content: center;
+            h2{
+                color: $white;
+                font-weight: 900;
+                font-size: 8rem;
+                line-height: 7.5rem;
+            }
+            p{
+                font-size: 1.5rem;
+                color: $text-color;
+                padding: 3rem 0 3rem 0;
+                line-height: 2rem;
+            }
+            .btn{
+            
+                background-color:$Ash;
+                font-size: 2rem;
+                color: $white;
+                padding: 1.5rem 5rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                i{
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}

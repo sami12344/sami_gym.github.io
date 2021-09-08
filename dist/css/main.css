@@ -1,0 +1,352 @@
+@font-face {
+  font-family: ArchivoBlack;
+  src: url("../fonts/ArchivoBlack-Regular.ttf");
+}
+
+@font-face {
+  font-family: BebasNeue;
+  src: url("../fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+* {
+  font-family: Poppins, "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@font-face {
+  font-family: ArchivoBlack;
+  src: url("../fonts/ArchivoBlack-Regular.ttf");
+}
+
+@font-face {
+  font-family: BebasNeue;
+  src: url("../fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+* {
+  font-family: Poppins, "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+header {
+  text-transform: uppercase;
+  width: 100%;
+  position: fixed;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+header .header-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0 6rem 0 6rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 7.5rem;
+}
+
+header .header-flex-container .logo {
+  height: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+header .header-flex-container .logo img {
+  width: 9rem;
+}
+
+header .header-flex-container .nav {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+header .header-flex-container .nav .navbar a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 1.5rem;
+}
+
+header .header-flex-container .nav .navbar a:hover {
+  font-size: 2rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+header .header-flex-container .button .free-trial {
+  width: 5rem;
+  color: #FFFFFF;
+  font-weight: 800;
+  border: solid 0.2rem #FFFFFF;
+  padding: 1rem 3rem 1.5rem 3rem;
+  border-radius: 3.125rem;
+}
+
+header .header-flex-container .button .free-trial:hover {
+  zoom: 1.02;
+}
+
+header .header-flex-container .button .free-trial i {
+  padding: 0 0 0 1rem;
+}
+
+header .header-flex-container .button .free-trial span {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+header .header-flex-container .bars {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header .header-flex-container {
+    padding: 0 1rem 0 1rem;
+  }
+  header .header-flex-container .button .free-trial {
+    padding: .5rem 2.5rem 1rem 2.5rem;
+  }
+  header .header-flex-container .button a {
+    margin-right: 2rem;
+    padding: 0;
+  }
+  header .header-flex-container .bars {
+    display: inline-block;
+    border: 2px solid #FFFFFF;
+    padding: .5rem 1rem;
+    border-radius: 20%;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  header .header-flex-container .nav .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #838383;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    padding: 0rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header .header-flex-container .nav .navbar .popup {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  header .header-flex-container .nav .navbar a {
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    background: #000000;
+    text-align: center;
+  }
+  header .header-flex-container .nav .navbar a:hover {
+    color: #000000;
+    background-color: #2D2D2D;
+  }
+}
+
+@font-face {
+  font-family: ArchivoBlack;
+  src: url("../fonts/ArchivoBlack-Regular.ttf");
+}
+
+@font-face {
+  font-family: BebasNeue;
+  src: url("../fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+* {
+  font-family: Poppins, "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+.home {
+  position: relative;
+}
+
+.home .home-container .image {
+  width: 100vw;
+  height: 100vh;
+}
+
+.home .home-container .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.home .home-container .content {
+  text-transform: uppercase;
+  width: 20%;
+  padding: 5rem;
+  position: absolute;
+  top: 25rem;
+  right: 17rem;
+  bottom: 0;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .home-container .content h2 {
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 8rem;
+  line-height: 7.5rem;
+}
+
+.home .home-container .content p {
+  font-size: 1.5rem;
+  color: #7A7A7A;
+  padding: 3rem 0 3rem 0;
+  line-height: 2rem;
+}
+
+.home .home-container .content .btn {
+  background-color: #2D2D2D;
+  font-size: 2rem;
+  color: #FFFFFF;
+  padding: 1.5rem 5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.home .home-container .content .btn i {
+  padding: 1rem;
+}
+/*# sourceMappingURL=main.css.map */
