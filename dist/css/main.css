@@ -326,6 +326,7 @@ html {
   font-weight: 900;
   font-size: 8rem;
   line-height: 7.5rem;
+  text-transform: uppercase;
 }
 
 .home .home-container .content p {
@@ -351,9 +352,6 @@ html {
 @media screen and (max-width: 768px) {
   .home {
     position: relative;
-  }
-  .home .home-container {
-    background-color: black;
   }
   .home .home-container .image {
     width: 100vw;
@@ -399,6 +397,26 @@ html {
   }
   .home .home-container .content .btn i {
     padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home .home-container .content {
+    width: 35%;
+    padding: 1rem;
+    position: absolute;
+    top: 45rem;
+    right: 10rem;
+    bottom: 0;
+  }
+  .home .home-container .content p {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    padding-bottom: 5rem;
+  }
+  .home .home-container .content .btn {
+    font-size: 3rem;
+    padding: 2.5rem 5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
