@@ -1,0 +1,78 @@
+@import "./config";
+
+.our_courses {
+  h2 {
+    text-align: center;
+    padding: 5rem;
+    font-size: 7rem;
+    font-weight: 900;
+  }
+  .course__conntainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 10%;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    .course__cards {
+      background-color: rgba(243, 242, 242, 0.994);
+      width: 45rem;
+      height: 35rem;
+      margin: 2rem;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 2rem;
+      box-shadow: $box-shadow;
+      text-align: center;
+      &:hover {
+        color: $white;
+        background-color: $Ash;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      }
+      img {
+        object-position: center;
+        width: 10rem;
+        object-fit: contain;
+        padding: 2rem 0 0 0;
+      }
+      h3 {
+        padding: 1.5rem 0 1.5rem 0;
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+      p {
+        font-size: 1.5rem;
+        color: $text-color;
+        padding: 2rem;
+        line-height: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .our_courses {
+    h2 {
+      font-size: 5rem;
+      margin-top: 2.5rem;
+      padding: 2.5rem 0 0 0;
+    }
+    .course__conntainer {
+      padding: 0;
+
+      .course__cards {
+        width: 50rem;
+        height: 40rem;
+        margin-top: 4rem;
+
+        p {
+          font-size: 1.5rem;
+          color: $text-color;
+          padding: 1rem 0;
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+}

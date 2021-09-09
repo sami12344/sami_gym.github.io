@@ -305,11 +305,11 @@ html {
 
 .home .home-container .content {
   text-transform: uppercase;
-  width: 20%;
+  width: 27%;
   padding: 5rem;
   position: absolute;
-  top: 25rem;
-  right: 17rem;
+  top: 30rem;
+  right: 10rem;
   bottom: 0;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -400,23 +400,429 @@ html {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .home .home-container .content {
-    width: 35%;
-    padding: 1rem;
+@font-face {
+  font-family: ArchivoBlack;
+  src: url("../fonts/ArchivoBlack-Regular.ttf");
+}
+
+@font-face {
+  font-family: BebasNeue;
+  src: url("../fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+* {
+  font-family: Poppins, "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+.widgets {
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(48%, #161616), color-stop(74%, #3a3a3a));
+  background-image: linear-gradient(90deg, #161616 48%, #3a3a3a 74%);
+  height: 100%;
+  width: 100%;
+}
+
+.widgets__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.widgets__container__things {
+  position: relative;
+}
+
+.widgets__container__things img {
+  -o-object-position: right;
+     object-position: right;
+}
+
+.widgets__container #widgets-01 {
+  background-color: #161616;
+  height: 40rem;
+  width: 40rem;
+  position: relative;
+}
+
+.widgets__container #widgets-01 .content h3 {
+  padding-bottom: 2rem;
+}
+
+.widgets__container #widgets-01 img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 40rem;
+  width: 40rem;
+  -o-object-position: right;
+     object-position: right;
+}
+
+.widgets__container #widgets-02 {
+  background-color: #252525;
+  position: relative;
+  height: 40rem;
+  width: 40rem;
+}
+
+.widgets__container #widgets-02 img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 40rem;
+  width: 40rem;
+  -o-object-position: right;
+     object-position: right;
+}
+
+.widgets__container #widgets-03 {
+  background-color: #323232;
+  position: relative;
+  height: 40rem;
+  width: 40rem;
+}
+
+.widgets__container #widgets-03 img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: right;
+     object-position: right;
+  height: 41rem;
+  width: 40rem;
+}
+
+.widgets__container #widgets-04 {
+  background-color: #3b3b3b;
+  position: relative;
+  height: 40rem;
+  width: 40rem;
+}
+
+.widgets__container #widgets-04 img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 35rem;
+  width: 40rem;
+  -o-object-position: bottom right;
+     object-position: bottom right;
+  padding: 0rem 1rem;
+}
+
+.widgets__container .content {
+  position: absolute;
+  top: 16.5rem;
+}
+
+.widgets__container .content h3 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  width: 50%;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.widgets__container .content h2 {
+  margin-top: -6rem;
+  font-size: 20rem;
+  font-weight: 900;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+  .widgets {
+    background-color: transparent;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(48%, #161616), color-stop(74%, #3a3a3a));
+    background-image: linear-gradient(90deg, #161616 48%, #3a3a3a 74%);
+    height: 100%;
+    width: 100%;
+  }
+  .widgets__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+  }
+  .widgets__container__things {
+    position: relative;
+  }
+  .widgets__container__things img {
+    -o-object-position: right;
+       object-position: right;
+  }
+  .widgets__container #widgets-01 {
+    background-color: #161616;
+    height: 45rem;
+    width: 45rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .widgets__container #widgets-01 .content h3 {
+    padding-bottom: 2rem;
+  }
+  .widgets__container #widgets-01 img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: 40rem;
+    width: 45rem;
+    -o-object-position: right;
+       object-position: right;
+  }
+  .widgets__container #widgets-02 {
+    background-color: #252525;
+    position: relative;
+    height: 45rem;
+    width: 45rem;
+    overflow: hidden;
+  }
+  .widgets__container #widgets-02 img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: 50rem;
+    width: 50rem;
+    -o-object-position: right;
+       object-position: right;
+  }
+  .widgets__container #widgets-03 {
+    background-color: #323232;
+    position: relative;
+    height: 45rem;
+    width: 45rem;
+    overflow: hidden;
+  }
+  .widgets__container #widgets-03 img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: right;
+       object-position: right;
+    height: 45rem;
+    width: 45rem;
+  }
+  .widgets__container #widgets-04 {
+    background-color: #3b3b3b;
+    position: relative;
+    height: 45rem;
+    width: 45rem;
+    overflow: hidden;
+  }
+  .widgets__container #widgets-04 img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: 45rem;
+    width: 45rem;
+    -o-object-position: 10rem 2rem;
+       object-position: 10rem 2rem;
+    padding: 0rem 1rem;
+  }
+  .widgets__container .content {
     position: absolute;
-    top: 45rem;
-    right: 10rem;
-    bottom: 0;
+    top: 16.5rem;
   }
-  .home .home-container .content p {
+  .widgets__container .content h3 {
+    text-transform: uppercase;
     font-size: 2.5rem;
-    line-height: 3rem;
-    padding-bottom: 5rem;
+    width: 50%;
+    color: #FFFFFF;
+    text-align: center;
+    padding-left: 5rem;
   }
-  .home .home-container .content .btn {
-    font-size: 3rem;
-    padding: 2.5rem 5rem;
+  .widgets__container .content h2 {
+    font-size: 20rem;
+    font-weight: 900;
+    color: #FFFFFF;
+  }
+}
+
+@font-face {
+  font-family: ArchivoBlack;
+  src: url("../fonts/ArchivoBlack-Regular.ttf");
+}
+
+@font-face {
+  font-family: BebasNeue;
+  src: url("../fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+* {
+  font-family: Poppins, "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+.our_courses h2 {
+  text-align: center;
+  padding: 5rem;
+  font-size: 7rem;
+  font-weight: 900;
+}
+
+.our_courses .course__conntainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 10%;
+  padding: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our_courses .course__conntainer .course__cards {
+  background-color: rgba(243, 242, 242, 0.994);
+  width: 45rem;
+  height: 35rem;
+  margin: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+}
+
+.our_courses .course__conntainer .course__cards:hover {
+  color: #FFFFFF;
+  background-color: #2D2D2D;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.our_courses .course__conntainer .course__cards img {
+  -o-object-position: center;
+     object-position: center;
+  width: 10rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 2rem 0 0 0;
+}
+
+.our_courses .course__conntainer .course__cards h3 {
+  padding: 1.5rem 0 1.5rem 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.our_courses .course__conntainer .course__cards p {
+  font-size: 1.5rem;
+  color: #7A7A7A;
+  padding: 2rem;
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .our_courses h2 {
+    font-size: 5rem;
+    margin-top: 2.5rem;
+    padding: 2.5rem 0 0 0;
+  }
+  .our_courses .course__conntainer {
+    padding: 0;
+  }
+  .our_courses .course__conntainer .course__cards {
+    width: 50rem;
+    height: 40rem;
+    margin-top: 4rem;
+  }
+  .our_courses .course__conntainer .course__cards p {
+    font-size: 1.5rem;
+    color: #7A7A7A;
+    padding: 1rem 0;
+    line-height: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

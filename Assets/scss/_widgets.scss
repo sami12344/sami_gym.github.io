@@ -1,0 +1,212 @@
+@import "./config";
+
+.widgets {
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #161616 48%, #3a3a3a 74%);
+  height: 100%;
+  width: 100%;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    justify-content: center;
+    height: 100%;
+    &__things {
+        position: relative;
+      img{
+        object-position: right;
+      }
+    }
+
+    #widgets-01 {
+      background-color: #161616;
+      height: 40rem;
+        width: 40rem;
+        position: relative;
+        .content{
+            h3{
+                padding-bottom: 2rem;
+            }
+        }
+      img {
+        object-fit: contain;
+        height: 40rem;
+        width: 40rem;
+        object-position: right;
+      }
+    }
+    #widgets-02 {
+      background-color: #252525;
+      position: relative;
+      height: 40rem;
+        width: 40rem;
+        
+      img {
+        object-fit: contain;
+        height: 40rem;
+        width: 40rem;
+        object-position: right;
+        
+        
+      }
+    }
+    #widgets-03 {
+      background-color: #323232;
+      position: relative;
+      height: 40rem;
+        width: 40rem;
+      img {
+        object-fit: contain;
+        object-position: right;
+        height: 41rem;
+        width: 40rem;
+      }
+    }
+    #widgets-04 {
+      background-color: #3b3b3b;
+      position: relative;
+      height: 40rem;
+      width: 40rem;
+      img {
+        object-fit: contain;
+        height: 35rem;
+        width: 40rem;
+        object-position: bottom right;
+        padding: 0rem 1rem;
+      }
+    }
+      .content{
+          position: absolute;
+          top: 16.5rem;
+        
+          h3{
+              text-transform: uppercase;
+              font-size: 2.5rem;
+              width: 50%;
+              color: $white;
+              text-align: center;
+              
+            
+          }
+          h2{
+              margin-top: -6rem;
+            font-size: 20rem;
+            font-weight: 900;
+            color: $white;
+          }
+      }
+    
+  }
+}
+
+
+@media  screen and (max-width: 768px){
+  .widgets {
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #161616 48%, #3a3a3a 74%);
+    height: 100%;
+    width: 100%;
+    &__container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: 0;
+      margin-right: 0;
+      justify-content: center;
+      height: 100%;
+      &__things {
+          position: relative;
+        img{
+          object-position: right;
+        }
+      }
+  
+      #widgets-01 {
+        background-color: #161616;
+        height: 45rem;
+          width: 45rem;
+          position: relative;
+          overflow: hidden;
+          .content{
+              h3{
+                  padding-bottom: 2rem;
+              }
+          }
+        img {
+          object-fit: contain;
+          height: 40rem;
+          width: 45rem;
+          object-position: right;
+        }
+      }
+      #widgets-02 {
+        background-color: #252525;
+        position: relative;
+        height: 45rem;
+          width: 45rem;
+          overflow: hidden;
+          
+        img {
+          object-fit: contain;
+          height: 50rem;
+          width: 50rem;
+          object-position: right;
+          
+          
+        }
+      }
+      #widgets-03 {
+        background-color: #323232;
+        position: relative;
+        height: 45rem;
+          width: 45rem;
+          overflow: hidden;
+        img {
+          object-fit: contain;
+          object-position: right;
+          height: 45rem;
+          width: 45rem;
+        }
+      }
+      #widgets-04 {
+        background-color: #3b3b3b;
+        position: relative;
+        height: 45rem;
+        width: 45rem;
+        overflow: hidden;
+        
+        img {
+          object-fit: contain;
+          height: 45rem;
+          width: 45rem;
+          object-position: 10rem 2rem;
+          padding: 0rem 1rem;
+        }
+      }
+        .content{
+            position: absolute;
+            top: 16.5rem;
+          
+            h3{
+                text-transform: uppercase;
+                font-size: 2.5rem;
+                width: 50%;
+                color: $white;
+                text-align: center;
+                padding-left: 5rem;
+                
+              
+            }
+            h2{
+                
+              font-size: 20rem;
+              font-weight: 900;
+              color: $white;
+            }
+        }
+      
+    }
+  }
+}
