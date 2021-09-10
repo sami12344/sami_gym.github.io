@@ -385,18 +385,18 @@ html {
   .home .home-container .content h2 {
     color: #FFFFFF;
     font-weight: 900;
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 4.5rem;
   }
   .home .home-container .content p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #7A7A7A;
-    padding: 1rem 0 2rem 0;
+    padding: 2rem 0 2rem 0;
     line-height: 2rem;
   }
   .home .home-container .content .btn {
     background-color: #2D2D2D;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #FFFFFF;
     padding: 1.5rem 2rem;
     text-transform: uppercase;
