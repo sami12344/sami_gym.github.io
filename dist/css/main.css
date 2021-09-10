@@ -378,7 +378,7 @@ html {
     padding: 1rem;
     position: absolute;
     top: 30rem;
-    right: 1rem;
+    right: 0;
     bottom: 0;
     display: inline-block;
   }
