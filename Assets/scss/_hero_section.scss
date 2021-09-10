@@ -42,7 +42,7 @@
                 padding: 3rem 0 3rem 0;
                 line-height: 2rem;
             }
-            .btn{
+            a.btn{
             
                 background-color:$Ash;
                 font-size: 2rem;
@@ -52,6 +52,11 @@
                 font-weight: 600;
                 i{
                     padding: 1rem;
+                }
+                &:hover{
+                    color: $black;
+                    background-color: $text-color;
+                    transform: skew(-10deg);
                 }
             }
         }
@@ -78,7 +83,7 @@
             }
             .content{
                 text-transform: uppercase;
-                width: 67%;
+                width: 80%;
                 padding: 1rem;
                 position: absolute;
                 top: 30rem;
@@ -103,12 +108,12 @@
                     background-color:$Ash;
                     font-size: 2rem;
                     color: $white;
-                    padding: 1.5rem 3rem;
+                    padding: 1.5rem 2rem;
                     text-transform: uppercase;
                     font-weight: 600;
                     
                     i{
-                        padding: 1rem;
+                        padding: 0 1rem 0 0 ;
                     }
                 }
             }

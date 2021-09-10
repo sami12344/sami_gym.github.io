@@ -1,0 +1,147 @@
+@import "./config";
+
+.coaches {
+  width: 100%;
+  height: 45rem;
+  margin: 20rem 0 0 0;
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: $black;
+    color: $white;
+    .img {
+      position: relative;
+      align-self: flex-end;
+
+      img {
+        height: 60rem;
+        padding: auto;
+        position: absolute;
+        top: -60rem;
+      }
+    }
+    .content {
+      justify-self: center;
+      width: 50rem;
+
+      h2 {
+        font-size: 7rem;
+        padding-top: 5rem;
+        line-height: 8rem;
+        font-weight: 900;
+      }
+      p {
+        margin-top: 2rem;
+        color: $text-color;
+        font-size: 1.5rem;
+        width: 50rem;
+        line-height: 2rem;
+        padding-bottom: 5rem;
+      }
+      a.btn {
+        background-color: $Ash;
+        color: $white;
+        font-size: 2rem;
+        padding: 2rem 5rem;
+        span {
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+        i {
+          padding: 0 0rem 0 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .coaches {
+    width: 100vw;
+    height:100vh;
+    background-color:$black;
+    .container {
+      height: 100vh;
+      flex-direction: column;
+      .img {
+        img {
+          height: 45rem;
+          padding: auto;
+          position: absolute;
+          top: -25rem;
+          left: -33.5rem;
+        }
+      }
+      .content{
+        width: 100%;
+        padding: 2rem;
+        text-align: center;
+        margin: 0;
+        h2{
+          font-size: 5rem;
+          line-height: 5rem;
+          padding-top: 10rem;
+        }
+        p{
+          font-size: 1.5rem;
+          word-wrap: normal;
+          padding: 0rem 1rem 5rem 1rem;
+          width: 100%;
+          line-height: 2rem;
+          
+        }
+        a{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width:768px) and (max-width: 1024px) {
+  .coaches {
+    width: 100vw;
+    height:100vh;
+    background-color:$black;
+    .container {
+      height: 100vh;
+      flex-direction: column;
+      .img {
+        img {
+          height: 85rem;
+          padding: auto;
+          position: absolute;
+          top: -55rem;
+          left: -80rem;
+        }
+      }
+      .content{
+        width: 100%;
+        padding: 2rem;
+        text-align: center;
+        margin: 0;
+        h2{
+          font-size: 15rem;
+          line-height: 15rem;
+          padding-top: 10rem;
+        }
+        p{
+          font-size: 3rem;
+          word-wrap: normal;
+          padding: 0rem 1rem 5rem 1rem;
+          width: 100%;
+          line-height: 5rem;
+          
+        }
+        a{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

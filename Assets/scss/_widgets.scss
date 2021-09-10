@@ -130,8 +130,10 @@
           position: relative;
           overflow: hidden;
           .content{
+            
               h3{
-                  padding-bottom: 2rem;
+                  margin-bottom: 0;
+                  
               }
           }
         img {
@@ -139,6 +141,7 @@
           height: 40rem;
           width: 45rem;
           object-position: right;
+          float: right;
         }
       }
       #widgets-02 {
@@ -148,11 +151,13 @@
           width: 45rem;
           overflow: hidden;
           
+          
         img {
           object-fit: contain;
-          height: 50rem;
+          height: 45rem;
           width: 50rem;
           object-position: right;
+          float: right;
           
           
         }
@@ -163,11 +168,13 @@
         height: 45rem;
           width: 45rem;
           overflow: hidden;
+          
         img {
           object-fit: contain;
           object-position: right;
-          height: 45rem;
-          width: 45rem;
+          height: 50rem;
+          width: 50rem;
+          float: right;
         }
       }
       #widgets-04 {
@@ -177,17 +184,21 @@
         width: 45rem;
         overflow: hidden;
         
+        
         img {
           object-fit: contain;
           height: 45rem;
           width: 45rem;
           object-position: 10rem 2rem;
           padding: 0rem 1rem;
+          float: right;
         }
       }
         .content{
             position: absolute;
-            top: 16.5rem;
+            top: 20rem;
+            padding: 3rem 0 0 0;
+            background-image: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0,));
           
             h3{
                 text-transform: uppercase;
@@ -195,13 +206,14 @@
                 width: 50%;
                 color: $white;
                 text-align: center;
-                padding-left: 5rem;
+                padding-left: 2rem;
+                margin-bottom: 2rem;
                 
               
             }
             h2{
                 
-              font-size: 20rem;
+              font-size: 18rem;
               font-weight: 900;
               color: $white;
             }
