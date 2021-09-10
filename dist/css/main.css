@@ -387,6 +387,7 @@ html {
     font-weight: 900;
     font-size: 5rem;
     line-height: 4.5rem;
+    width: 50%;
   }
   .home .home-container .content p {
     font-size: 1.7rem;
