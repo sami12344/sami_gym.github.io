@@ -1073,7 +1073,7 @@ html {
 .banner-section .banner-container .banner {
   background: linear-gradient(-55deg, #000000 29%, #2D2D2D 29.1%, #2D2D2D 68%, #000000 68.1%);
   border-radius: 5px;
-  margin: 2rem;
+  margin: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1093,7 +1093,7 @@ html {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 250px;
           flex: 1 1 250px;
-  padding: 3rem;
+  padding: 0rem;
   text-align: center;
 }
 
@@ -1145,10 +1145,13 @@ html {
 }
 
 .banner-section .banner-container .banner .woman {
-  position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 250px;
           flex: 1 1 250px;
+}
+
+.banner-section .banner-container .banner .woman img {
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -1196,6 +1199,112 @@ html {
 }
 
 .cards {
+  margin: 5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cards .heading {
+  display: block;
+  text-align: center;
+  font-size: 5rem;
+  margin: 5rem auto;
+}
+
+.cards .heading h2 {
+  font-weight: 900;
+}
+
+.cards .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.cards .card-container .card {
+  position: relative;
+  width: 256px;
+  height: 420px;
+  background-color: #FFFFFF;
+  margin: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+}
+
+.cards .card-container .card:hover {
+  background-color: #2D2D2D;
+  color: #FFFFFF;
+}
+
+.cards .card-container .card .card-heading h2 {
+  color: #000000;
+  font-size: 2rem;
+  padding: 3rem 0;
+}
+
+.cards .card-container .card .card-img img {
+  width: 45%;
+}
+
+.cards .card-container .card .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cards .card-container .card .list ul {
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.cards .card-container .card .list ul li {
+  display: block;
+  list-style: none;
+}
+
+.cards .card-container .card .list ul li span {
+  color: #7A7A7A;
+  padding: 1.5rem 1.2rem;
+  font-weight: 800;
+}
+
+.cards .card-container .card .list .pricing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1205,10 +1314,44 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+}
+
+.cards .card-container .card .list .pricing .price {
+  color: #000000;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.cards .card-container .card .list .pricing .price h3 {
+  font-weight: 900;
+}
+
+.cards .card-container .card .list .pricing .month {
+  color: #7A7A7A;
+  font-size: 1.8rem;
+}
+
+.cards .card-container .card .list .get-started-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #7A7A7A;
+  font-size: 1.7rem;
+  width: 120px;
+  height: 35px;
+  border: 2px solid #7A7A7A;
+  border-radius: 50px 50px 50px 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards .card-container .card .list .get-started-btn a {
+  color: #7A7A7A;
+  font-size: 1.7rem;
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
