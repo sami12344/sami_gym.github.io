@@ -1,0 +1,90 @@
+.banner-section{
+    .banner-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .banner{
+           background: linear-gradient(-55deg, $black 29%, $Ash 29.1%, $Ash 68%, $black 68.1%); 
+             border-radius: 5px;
+             margin: 2rem;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             flex-wrap: wrap;
+             box-shadow: $box-shadow;
+             .trainer, .woman{
+                 flex: 1 1 250px;
+                 padding: 3rem;
+                 text-align: center;
+                 img{
+                     width: 80%;
+                 }
+             }
+             .content{
+                 flex: 1 1 250px;
+                 text-align: center;
+                 padding: 2rem;
+                 text-transform: uppercase;
+                 h3{
+                     font-size: 6rem;
+                     font-weight: 900;
+                     color: $white;
+
+
+                 }
+                 p{
+
+                    font-size: 1.7rem;
+                    color: $text-color;
+                    
+
+
+                 }
+                
+                 .btn{
+                     display: block;
+                     height: 5rem;
+                     width: 20rem;
+                     line-height: 5rem;
+                     background: $black;
+                     color: $white;
+                     font-size: 2rem;
+                     margin: 2rem auto;
+                     text-decoration: none;
+                     font-weight: 600;
+                     box-shadow: $box-shadow;
+                     &:hover{
+                         transform: skewX(-25deg);
+                         color: $black;
+                         background: $white;
+                         width: 21rem;
+                     }
+                 }
+
+             }
+             .woman{
+                 position: relative;
+                //  bottom: -33px;
+                //  padding: 2rem;
+                 flex: 1 1 250px;
+                 
+
+             }
+        }
+
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .banner-section{
+    .banner-container{
+        .banner{
+            .content{
+            h3{
+                font-size: 6rem;
+            }  
+        } }
+    }
+}
+}

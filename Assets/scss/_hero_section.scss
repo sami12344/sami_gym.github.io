@@ -43,13 +43,19 @@
                 line-height: 2rem;
             }
             a.btn{
-            
+                
                 background-color:$Ash;
                 font-size: 2rem;
                 color: $white;
-                padding: 1.5rem 5rem;
+                padding: 1.5rem 3rem;
                 text-transform: uppercase;
                 font-weight: 600;
+                span{
+                    text-transform: uppercase;
+                    font-size: 2rem;
+                    font-weight: 800;
+                    
+                }
                 i{
                     padding: 1rem;
                 }
@@ -83,7 +89,7 @@
             }
             .content{
                 text-transform: uppercase;
-                width: 80%;
+                width: 70%;
                 padding: 1rem;
                 position: absolute;
                 top: 27rem;
@@ -98,7 +104,7 @@
                     width: 50%;
                 }
                 p{
-                    font-size: 1.7rem;
+                    font-size: 1.5rem;
                     color: $text-color;
                     padding: 2rem 0 2rem 0;
                     line-height: 2rem;
@@ -124,3 +130,84 @@
 
 
 
+@media (min-width:200px) and (max-width: 280px){
+    .home{
+        background-image: linear-gradient(to right, rgba(0,0,0,1) rgba(0,0,0,1));
+        height: 100%;
+        width: 100%;
+        .home-container{
+            .content{
+                h2{
+                    font-size: 3.5rem;
+
+                }
+                P{
+                    font-size: 1.4rem;
+
+                }
+                a.btn{
+                
+                    background-color:$Ash;
+                    font-size: 1.5rem;
+                    color: $white;
+                    padding: 1.5rem 2rem;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    span{
+                        text-transform: uppercase;
+                        font-size: 1.7rem;
+                        
+                    }
+                
+                
+                }
+            }
+            }
+        
+      
+    }
+}
+
+
+
+@media (min-width:1000px) and (max-width: 1024px){
+    .home{
+        background-image: linear-gradient(to right, rgba(0,0,0,1) rgba(0,0,0,1));
+        height: 100%;
+        width: 100%;
+        .home-container{
+            .content{
+                width: 50%;
+                right: -5rem;
+                h2{
+                    font-size: 5rem;
+                    width: 50%;
+                    line-height: 5rem;
+
+                }
+                P{
+                    font-size: 1.3rem;
+
+                }
+                a.btn{
+                
+                    background-color:$Ash;
+                    font-size: 1.5rem;
+                    color: $white;
+                    padding: 2rem 3rem;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    span{
+                        text-transform: uppercase;
+                        font-size: 1rem;
+                        
+                    }
+                
+                
+                }
+            }
+            }
+        
+      
+    }
+}

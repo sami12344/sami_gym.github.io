@@ -340,9 +340,15 @@ html {
   background-color: #2D2D2D;
   font-size: 2rem;
   color: #FFFFFF;
-  padding: 1.5rem 5rem;
+  padding: 1.5rem 3rem;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.home .home-container .content a.btn span {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 800;
 }
 
 .home .home-container .content a.btn i {
@@ -374,7 +380,7 @@ html {
   }
   .home .home-container .content {
     text-transform: uppercase;
-    width: 80%;
+    width: 70%;
     padding: 1rem;
     position: absolute;
     top: 27rem;
@@ -390,7 +396,7 @@ html {
     width: 50%;
   }
   .home .home-container .content p {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: #7A7A7A;
     padding: 2rem 0 2rem 0;
     line-height: 2rem;
@@ -405,6 +411,66 @@ html {
   }
   .home .home-container .content .btn i {
     padding: 0 1rem 0 0;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 280px) {
+  .home {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(black, black));
+    background-image: linear-gradient(to right, black black);
+    height: 100%;
+    width: 100%;
+  }
+  .home .home-container .content h2 {
+    font-size: 3.5rem;
+  }
+  .home .home-container .content P {
+    font-size: 1.4rem;
+  }
+  .home .home-container .content a.btn {
+    background-color: #2D2D2D;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    padding: 1.5rem 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .home .home-container .content a.btn span {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1024px) {
+  .home {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(black, black));
+    background-image: linear-gradient(to right, black black);
+    height: 100%;
+    width: 100%;
+  }
+  .home .home-container .content {
+    width: 50%;
+    right: -5rem;
+  }
+  .home .home-container .content h2 {
+    font-size: 5rem;
+    width: 50%;
+    line-height: 5rem;
+  }
+  .home .home-container .content P {
+    font-size: 1.3rem;
+  }
+  .home .home-container .content a.btn {
+    background-color: #2D2D2D;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .home .home-container .content a.btn span {
+    text-transform: uppercase;
+    font-size: 1rem;
   }
 }
 
@@ -1049,6 +1115,105 @@ html {
   }
   .coaches .container .content a {
     width: 100%;
+  }
+}
+
+.banner-section .banner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner-section .banner-container .banner {
+  background: linear-gradient(-55deg, #000000 29%, #2D2D2D 29.1%, #2D2D2D 68%, #000000 68.1%);
+  border-radius: 5px;
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.banner-section .banner-container .banner .trainer, .banner-section .banner-container .banner .woman {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
+  padding: 3rem;
+  text-align: center;
+}
+
+.banner-section .banner-container .banner .trainer img, .banner-section .banner-container .banner .woman img {
+  width: 80%;
+}
+
+.banner-section .banner-container .banner .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
+  text-align: center;
+  padding: 2rem;
+  text-transform: uppercase;
+}
+
+.banner-section .banner-container .banner .content h3 {
+  font-size: 6rem;
+  font-weight: 900;
+  color: #FFFFFF;
+}
+
+.banner-section .banner-container .banner .content p {
+  font-size: 1.7rem;
+  color: #7A7A7A;
+}
+
+.banner-section .banner-container .banner .content .btn {
+  display: block;
+  height: 5rem;
+  width: 20rem;
+  line-height: 5rem;
+  background: #000000;
+  color: #FFFFFF;
+  font-size: 2rem;
+  margin: 2rem auto;
+  text-decoration: none;
+  font-weight: 600;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.banner-section .banner-container .banner .content .btn:hover {
+  -webkit-transform: skewX(-25deg);
+          transform: skewX(-25deg);
+  color: #000000;
+  background: #FFFFFF;
+  width: 21rem;
+}
+
+.banner-section .banner-container .banner .woman {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-section .banner-container .banner .content h3 {
+    font-size: 6rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
