@@ -164,6 +164,10 @@ header .header-flex-container .bars {
   display: none;
 }
 
+header .header-flex-container .bars i {
+  font-size: 2.5rem;
+}
+
 @media (max-width: 991px) {
   header {
     padding: 1rem 2rem;
@@ -271,6 +275,7 @@ html {
      object-position: center;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
 }
 
 .home .home-container .content {
@@ -336,13 +341,9 @@ html {
   .home {
     position: relative;
   }
-  .home .home-container .image {
+  .home .home-container .image img {
     width: 100vw;
     height: 100vh;
-  }
-  .home .home-container .image img {
-    height: 100%;
-    width: 100%;
     -o-object-position: center;
        object-position: center;
     -o-object-fit: cover;
@@ -1244,16 +1245,55 @@ html {
 }
 
 .cards .card-container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
-  width: 256px;
-  height: 420px;
+  width: 35rem;
+  height: 50rem;
   background-color: #FFFFFF;
   margin: 2rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 2%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  overflow: hidden;
+}
+
+.cards .card-container .card .popular {
+  position: absolute;
+  top: -1rem;
+  z-index: 100;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 12rem;
+  height: 3rem;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.cards .card-container .card .popular a {
+  color: white;
+  font-size: 1.5rem;
+  padding: 2rem 3rem;
+  font-weight: 900;
 }
 
 .cards .card-container .card:hover {
@@ -1340,8 +1380,9 @@ html {
           justify-content: center;
   color: #7A7A7A;
   font-size: 1.7rem;
-  width: 120px;
-  height: 35px;
+  width: 15rem;
+  height: 5rem;
+  margin: 2rem 0;
   border: 2px solid #7A7A7A;
   border-radius: 50px 50px 50px 50px;
   -webkit-box-align: center;
@@ -1353,5 +1394,81 @@ html {
   color: #7A7A7A;
   font-size: 1.7rem;
   display: block;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+* {
+  font-family: Poppins, "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+.footer {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#00093c), to(#2d0b00));
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #fff;
+  padding: 10rem 5rem;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+.footer .footer_row {
+  width: 85%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer_row .footer_col {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  padding: 2rem;
+}
+
+.footer .footer_row .footer_col .logo {
+  width: 80px;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=main.css.map */

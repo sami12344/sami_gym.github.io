@@ -1,6 +1,7 @@
 @import './config';
 
 .cards{
+    
     margin: 5rem auto;
     display: flex;
     justify-content: flex-start;
@@ -26,15 +27,40 @@
      position: relative;
      text-align: center;
      .card{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         .popular{
+             position: absolute;
+             top: -1rem;
+             z-index: 100;
+
+             background-color: $black;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             width: 12rem;
+             height: 3rem;
+             border: 1px solid $black;
+             border-radius: 5px;
+             a{
+                 color: white;
+                 font-size: 1.5rem;
+                 padding: 2rem 3rem;
+                 font-weight: 900;
+                 
+             }
+         }
          position: relative;
-         width: 256px;
-         height: 420px;
+         width: 35rem;
+         height: 50rem;
          background-color: $white;
          margin: 2rem;
          border: 1px solid rgba(0,0,0,0.2);
          border-radius: 2%;
          box-shadow: $box-shadow;
-         overflow: hidden;
+        
          &:hover{
              background-color: $Ash;
              color: $white;
@@ -98,8 +124,9 @@
             justify-content: center;
             color: $text-color;
             font-size: 1.7rem;
-            width: 120px;
-            height: 35px;
+            width: 15rem;
+            height: 5rem;
+            margin: 2rem 0;
             border: 2px solid $text-color;
             border-radius: 50px 50px 50px 50px;
             align-items: center;

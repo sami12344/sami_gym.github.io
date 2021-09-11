@@ -15,3 +15,13 @@ window.onscroll = () => {
     navbar.classList.remove('popup');
 }
 
+// vanilajs
+VanillaTilt.init(document.querySelector(".card"), {
+    max: 25,
+    speed: 400,
+    glare: true,
+    "max-glare": 1,
+    
+});
+
+//It also supports NodeList
