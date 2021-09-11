@@ -4,20 +4,12 @@ $Ash:#2D2D2D;
 $testi:#F0F0F0;
 $text-color:#7A7A7A;
 $box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-@font-face {
-    font-family: ArchivoBlack ;
-    src: url('../fonts/ArchivoBlack-Regular.ttf');
-}
-@font-face {
-    font-family: BebasNeue;
-    src: url('../fonts/BebasNeue-Regular.ttf');
-}
+
 @font-face {
     font-family: Poppins;
     src: url('../fonts/Poppins-Regular.ttf');
 }
-$fontA: ArchivoBlack;
-$fontB: BebasNeue;
+
 $fontP:Poppins;
 
 *{

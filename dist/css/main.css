@@ -1,14 +1,4 @@
 @font-face {
-  font-family: ArchivoBlack;
-  src: url("../fonts/ArchivoBlack-Regular.ttf");
-}
-
-@font-face {
-  font-family: BebasNeue;
-  src: url("../fonts/BebasNeue-Regular.ttf");
-}
-
-@font-face {
   font-family: Poppins;
   src: url("../fonts/Poppins-Regular.ttf");
 }
@@ -44,16 +34,6 @@ html {
   html {
     font-size: 50%;
   }
-}
-
-@font-face {
-  font-family: ArchivoBlack;
-  src: url("../fonts/ArchivoBlack-Regular.ttf");
-}
-
-@font-face {
-  font-family: BebasNeue;
-  src: url("../fonts/BebasNeue-Regular.ttf");
 }
 
 @font-face {
@@ -235,16 +215,6 @@ header .header-flex-container .bars {
     color: #000000;
     background-color: #2D2D2D;
   }
-}
-
-@font-face {
-  font-family: ArchivoBlack;
-  src: url("../fonts/ArchivoBlack-Regular.ttf");
-}
-
-@font-face {
-  font-family: BebasNeue;
-  src: url("../fonts/BebasNeue-Regular.ttf");
 }
 
 @font-face {
@@ -475,16 +445,6 @@ html {
 }
 
 @font-face {
-  font-family: ArchivoBlack;
-  src: url("../fonts/ArchivoBlack-Regular.ttf");
-}
-
-@font-face {
-  font-family: BebasNeue;
-  src: url("../fonts/BebasNeue-Regular.ttf");
-}
-
-@font-face {
   font-family: Poppins;
   src: url("../fonts/Poppins-Regular.ttf");
 }
@@ -527,7 +487,7 @@ html {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(48%, #161616), color-stop(74%, #3a3a3a));
   background-image: linear-gradient(90deg, #161616 48%, #3a3a3a 74%);
   height: 100%;
-  width: 100%;
+  width: 100vw;
 }
 
 .widgets__container {
@@ -770,16 +730,6 @@ html {
 }
 
 @font-face {
-  font-family: ArchivoBlack;
-  src: url("../fonts/ArchivoBlack-Regular.ttf");
-}
-
-@font-face {
-  font-family: BebasNeue;
-  src: url("../fonts/BebasNeue-Regular.ttf");
-}
-
-@font-face {
   font-family: Poppins;
   src: url("../fonts/Poppins-Regular.ttf");
 }
@@ -906,16 +856,6 @@ html {
     padding: 1rem 0;
     line-height: 2rem;
   }
-}
-
-@font-face {
-  font-family: ArchivoBlack;
-  src: url("../fonts/ArchivoBlack-Regular.ttf");
-}
-
-@font-face {
-  font-family: BebasNeue;
-  src: url("../fonts/BebasNeue-Regular.ttf");
 }
 
 @font-face {
@@ -1215,5 +1155,60 @@ html {
   .banner-section .banner-container .banner .content h3 {
     font-size: 6rem;
   }
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+* {
+  font-family: Poppins, "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=main.css.map */
