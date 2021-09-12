@@ -328,8 +328,18 @@
 </footer>
 <!-- footer section ends -->
   
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript" src="./Assets/js/main.js"></script>
     <script type="text/javascript" src="./Assets/js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 50,
+            speed: 400,
+            perspective: 1000,
+        });
+        
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
     
 </body>
 
