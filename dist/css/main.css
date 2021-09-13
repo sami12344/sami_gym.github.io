@@ -36,6 +36,54 @@ html {
   }
 }
 
+@-webkit-keyframes header {
+  0% {
+    top: -1000rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes header {
+  0% {
+    top: -1000rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes up {
+  0% {
+    visibility: hidden;
+    position: relative;
+    top: 100rem;
+  }
+  50% {
+    position: static;
+    visibility: visible;
+    top: 50rem;
+  }
+  100% {
+  }
+}
+
+@keyframes up {
+  0% {
+    visibility: hidden;
+    position: relative;
+    top: 100rem;
+  }
+  50% {
+    position: static;
+    visibility: visible;
+    top: 50rem;
+  }
+  100% {
+  }
+}
+
 @font-face {
   font-family: Poppins;
   src: url("../fonts/Poppins-Regular.ttf");
@@ -71,6 +119,30 @@ html {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+}
+
+@keyframes header {
+  0% {
+    top: -1000rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes up {
+  0% {
+    visibility: hidden;
+    position: relative;
+    top: 100rem;
+  }
+  50% {
+    position: static;
+    visibility: visible;
+    top: 50rem;
+  }
+  100% {
   }
 }
 
@@ -256,6 +328,30 @@ html {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+}
+
+@keyframes header {
+  0% {
+    top: -1000rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes up {
+  0% {
+    visibility: hidden;
+    position: relative;
+    top: 100rem;
+  }
+  50% {
+    position: static;
+    visibility: visible;
+    top: 50rem;
+  }
+  100% {
   }
 }
 
@@ -480,6 +576,30 @@ html {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+}
+
+@keyframes header {
+  0% {
+    top: -1000rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes up {
+  0% {
+    visibility: hidden;
+    position: relative;
+    top: 100rem;
+  }
+  50% {
+    position: static;
+    visibility: visible;
+    top: 50rem;
+  }
+  100% {
   }
 }
 
@@ -768,6 +888,30 @@ html {
   }
 }
 
+@keyframes header {
+  0% {
+    top: -1000rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes up {
+  0% {
+    visibility: hidden;
+    position: relative;
+    top: 100rem;
+  }
+  50% {
+    position: static;
+    visibility: visible;
+    top: 50rem;
+  }
+  100% {
+  }
+}
+
 .our_courses h2 {
   text-align: center;
   padding: 5rem;
@@ -894,6 +1038,30 @@ html {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+}
+
+@keyframes header {
+  0% {
+    top: -1000rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes up {
+  0% {
+    visibility: hidden;
+    position: relative;
+    top: 100rem;
+  }
+  50% {
+    position: static;
+    visibility: visible;
+    top: 50rem;
+  }
+  100% {
   }
 }
 
@@ -1199,6 +1367,30 @@ html {
   }
 }
 
+@keyframes header {
+  0% {
+    top: -1000rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes up {
+  0% {
+    visibility: hidden;
+    position: relative;
+    top: 100rem;
+  }
+  50% {
+    position: static;
+    visibility: visible;
+    top: 50rem;
+  }
+  100% {
+  }
+}
+
 .cards {
   margin: 5rem auto;
   display: -webkit-box;
@@ -1432,6 +1624,30 @@ html {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+}
+
+@keyframes header {
+  0% {
+    top: -1000rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes up {
+  0% {
+    visibility: hidden;
+    position: relative;
+    top: 100rem;
+  }
+  50% {
+    position: static;
+    visibility: visible;
+    top: 50rem;
+  }
+  100% {
   }
 }
 

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sami Gym Website</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- fontawesome icons -->
     <link rel="stylesheet" href="./Assets/fontawesome-free-5.15.4-web/css/all.css">
     <link rel="stylesheet" href="./dist/css/main.css">
@@ -15,7 +17,7 @@
 
 <body>
     <!-- Header section Starts -->
-    <header>
+    <header data-aos="fade-down">
         <div class="header-flex-container">
             <div class="logo"><img src="./Assets/img/logo.png" alt="logo"></div>
             <div class="nav">
@@ -45,14 +47,19 @@
                 <img src="./Assets/img/scott-webb-xwMlVSqP20U-unsplash.jpg" alt="">
             </div>
 
-            <div class="content">
+            <div class="content" >
+                <div data-aos="fade-left">
                 <h2>
                     Build your body strong.
                 </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, praesentium. Eos exercitationem
+            </div>
+            <div data-aos="fade-right"  >
+                <p data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, praesentium. Eos exercitationem
                     voluptath highinj
                 </p>
-                <a href="" class="btn"><span>Get started</span><i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+                <div data-aos="fade-up" data-aos-offset="200">
+                <a  href="" class="btn" ><span>Get started</span><i class="fas fa-long-arrow-alt-right"></i></a></div>
             </div>
         </div>
     </section>
@@ -62,8 +69,8 @@
 
 
     <!-- widget section starts -->
-    <section class="widgets">
-        <div class="widgets__container">
+    <section class="widgets" >
+        <div class="widgets__container" data-aos="fade-left">
             <div class="widgets__things" id="widgets-01">
 
                 <img src="./Assets/img/feature-1.png" alt="">
@@ -102,34 +109,34 @@
 
 
     <!-- our courses section starts -->
-    <section class="our_courses">
+    <section class="our_courses"  data-aos="fade-up">
         <h2>OUR COURSES</h2>
         <div class="course__conntainer">
-            <div class="course__cards">
+            <div class="course__cards"  data-aos="fade-up"  data-aos-delay="10">
                 <img src="./Assets/img/service-icon-1.png" alt="">
                 <h3>WEIGHTLIFTING</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorum perferendis animi laboriosam
                     id ipsum impedit quis aspernatur illum amet ratione ad quia nulla </p>
             </div>
-            <div class="course__cards">
+            <div class="course__cards" data-aos="fade-up"  data-aos-delay="300">
                 <img src="./Assets/img/service-icon-2.png" alt="">
                 <h3>KETTLEBELLS</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorum perferendis animi laboriosam
                     id ipsum impedit quis aspernatur illum amet ratione ad quia nulla </p>
             </div>
-            <div class="course__cards">
+            <div class="course__cards" data-aos="fade-up"  data-aos-delay="400">
                 <img src="./Assets/img/service-icon-3.png" alt="">
                 <h3>ABS WORKOUT</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorum perferendis animi laboriosam
                     id ipsum impedit quis aspernatur illum amet ratione ad quia nulla </p>
             </div>
-            <div class="course__cards">
+            <div class="course__cards" data-aos="fade-up"  data-aos-delay="600">
                 <img src="./Assets/img/service-icon-4.png" alt="">
                 <h3>GYMNASTIC</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorum perferendis animi laboriosam
                     id ipsum impedit quis aspernatur illum amet ratione ad quia nulla </p>
             </div>
-            <div class="course__cards">
+            <div class="course__cards" data-aos="fade-up"  data-aos-delay="800">
                 <img src="./Assets/img/service-icon-5.png" alt="">
                 <h3>RUNNING</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorum perferendis animi laboriosam
@@ -159,16 +166,16 @@
     <section class="banner-section">
         <div class="banner-container">
             <div class="banner">
-                <div class="trainer">
+                <div class="trainer"  data-aos="slide-right">
                     <img src="./Assets/img/trainer-img.png" alt="">
                 </div>
-                <div class="content">
+                <div class="content"  data-aos="fade-up">
                     <h3>EXPERT
                         COACHES</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, vel.</p>
                     <a href="" class="btn"><span>Learn more <i class="fas fa-long-arrow-alt-right"></i> </span></a>
                 </div>
-                <div class="woman">
+                <div class="woman"  data-aos="slide-left">
                     <img src="./Assets/img/pngwing.com.png" alt="">
                 </div>
             </div>
@@ -176,12 +183,12 @@
     </section>
     <!-- banner section ends -->
 
-    <section class="cards" id="#pricing">
+    <section class="cards" id="#pricing"  data-aos="fade-up">
         <div class="heading">
             <h2>PRICING PLANS</h2>
         </div>
         <div class="card-container">
-            <div class="card">
+            <div class="card"  data-aos="slide-right">
                 <div class="card-heading">
                     <h2>STANDARD</h2>
                 </div>
@@ -212,7 +219,7 @@
 
             <!-- card02 -->
 
-            <div class="card" >
+            <div class="card"  data-aos="slide-up">
                 <div class="popular">
                     <a href="">POPULAR</a>
                 </div>
@@ -245,7 +252,7 @@
             </div>
 
             <!-- card03 -->
-            <div class="card">
+            <div class="card"  data-aos="slide-left">
                 <div class="card-heading">
                     <h2>PREMIUM</h2>
                 </div>
@@ -383,7 +390,16 @@
         
         //It also supports NodeList
         VanillaTilt.init(document.querySelectorAll(".your-element"));</script>
+         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+         <script>
+           AOS.init({
+               offset: 300,
+               delay: 100,
+               duration: 800,
+           });
+         </script>
     <script type="text/javascript" src="./Assets/js/main.js"></script>
+    
     
     
 </body>

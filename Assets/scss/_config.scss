@@ -44,5 +44,49 @@ html{
     }
 }
 
+@keyframes header {
+   0%{
+       top: -1000rem;
+   }
+   100%{
+       top: 0;
+   }
 
+    
+}
+
+@mixin header-mix {
+    animation-name: header;    
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-delay: .1s;
+    animation-fill-mode: both;
+}
+
+@keyframes up{
+    0% {
+        visibility: hidden;
+        position: relative;
+        top: 100rem;
+    }
+    50%{
+        position: static;
+        visibility: visible;
+        top: 50rem;
+    
+    }
+    100%{
+
+    }
+}
+
+@mixin up {
+    animation-name: up;    
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: .1s;
+
+}
 
