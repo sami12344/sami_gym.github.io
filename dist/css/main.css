@@ -1754,6 +1754,12 @@ html {
   font-size: 18px;
 }
 
+.footer .footer_row .footer_col .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footer .footer_row .footer_col .social-icons .fab {
   width: 40px;
   height: 40px;
